@@ -63,6 +63,17 @@ app.include_router(tasks.router)
 app.include_router(auth.router)
 
 
+@app.get("/", tags=["meta"])
+def root():
+    return {
+        "service": "CareBridge API",
+        "status": "ok",
+        "docs": "/docs",
+        "health": "/health",
+        "patients": "/api/patients",
+    }
+
+
 @app.get("/health", tags=["meta"])
 def health():
     return {"status": "ok", "cache": cache.available()}
