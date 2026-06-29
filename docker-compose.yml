@@ -1,0 +1,62 @@
+# CareBridge — 3-tier orchestration.
+# One command brings up all three tiers, fully seeded:  docker compose up --build
+#
+#   web   (presentation) -> http://localhost:5173
+#   api   (application)  -> http://localhost:8000  (Swagger UI at /docs)
+#   db    (data)         -> postgres on :5432, schema + seed auto-loaded
+#   cache (data)         -> redis on :6379
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-carebridge}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-carebridge}
+      POSTGRES_DB: ${POSTGRES_DB:-carebridge}
+    ports:
+      - "5432:5432"
+    volumes:
+      # *.sql files run in alphabetical order on first boot (init before seed).
+      - ./database:/docker-entrypoint-initdb.d:ro
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-carebridge}"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  cache:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  api:
+    build: ./backend
+    environment:
+      DATABASE_URL: postgresql+psycopg://${POSTGRES_USER:-carebridge}:${POSTGRES_PASSWORD:-carebridge}@db:5432/${POSTGRES_DB:-carebridge}
+      REDIS_URL: redis://cache:6379/0
+      JWT_SECRET: ${JWT_SECRET:-dev-secret-change-me}
+      CORS_ORIGINS: http://localhost:5173
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+      cache:
+        condition: service_healthy
+
+  web:
+    build: ./frontend
+    environment:
+      VITE_API_BASE_URL: http://localhost:8000
+    ports:
+      - "5173:5173"
+    depends_on:
+      - api
+
+volumes:
+  pgdata:
