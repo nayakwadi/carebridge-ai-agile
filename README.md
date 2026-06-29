@@ -9,7 +9,7 @@
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-4169E1?logo=postgresql&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?logo=docker&logoColor=white)
 
-> A working **3-tier healthcare application** *and* the complete **AI-powered Agile playbook** used to plan, staff, and govern it : built to demonstrate the skills from LinkedIn Learning's *AI-Powered Agile: Strategies for Modern Project Managers* (Chapters 1–3).
+> A working **3-tier healthcare application** *and* the complete **AI-powered Agile playbook** used to plan, staff, and govern it : built to demonstrate the skills from LinkedIn Learning's *AI-Powered Agile: Strategies for Modern Project Managers* (Chapters 1–3) (https://www.linkedin.com/learning/ai-powered-agile-strategies-for-modern-project-managers/the-intersection-of-agile-and-ai).
 
 <p align="center">
   <img src="docs/assets/ai-powered-agile-infographic.png" alt="AI-Powered SDLC: how AI was used at every phase of building CareBridge" width="720">
