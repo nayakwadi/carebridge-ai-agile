@@ -1,10 +1,10 @@
 # Using AI to Reinforce CareBridge's Agile Culture
 
-*Course mapping — Workbook §3.2: How AI can help reinforce agile culture*
+*Course mapping : Workbook 3.2: How AI can help reinforce agile culture*
 
 ## Scenario
 
-Naming the inhibitors (§3.1) was step one; reinforcing the culture is the ongoing work. I used AI to draft three concrete, runnable programs for the CareBridge cross-functional delivery team and leadership: an education program on agile principles and intrinsic motivation, a servant-leadership program, and a recurring collaboration survey anchored to our organizational OKRs.
+Naming the inhibitors (3.1) was step one; reinforcing the culture is the ongoing work. I used AI to draft three concrete, runnable programs for the CareBridge cross-functional delivery team and leadership: an education program on agile principles and intrinsic motivation, a servant-leadership program, and a recurring collaboration survey anchored to our organizational OKRs.
 
 ## The prompt I used
 
@@ -42,23 +42,23 @@ Keep it concrete and immediately runnable by a Scrum Master.
 
 ### Education program
 
-**"Agile by Principle, Not Process" — a 4-session learning series**
+**"Agile by Principle, Not Process" : a 4-session learning series**
 
-- **Purpose / framing:** Move the team from following ceremonies to understanding *why* — the Agile Manifesto values plus intrinsic motivation (autonomy, mastery, purpose) applied to a patient-facing product.
+- **Purpose / framing:** Move the team from following ceremonies to understanding *why* : the Agile Manifesto values plus intrinsic motivation (autonomy, mastery, purpose) applied to a patient-facing product.
 - **Participants:** Whole delivery team; the nurse-informaticist co-leads the clinical-context session; leadership attends Session 1 and Session 4 only (to signal sponsorship without dominating).
 - **Format:** Four 75-minute working sessions, one per sprint over 8 weeks; interactive (no lecture-only), each ending with one experiment the team commits to in the next sprint.
 - **Session outline:**
-  - **Session 1 — Why agile, here:** Manifesto values mapped to CareBridge's mission (cutting avoidable readmissions). Activity: each member writes the *purpose* of their role in one patient-impact sentence.
-  - **Session 2 — Autonomy & decision rights:** Delegation poker on real decisions (e.g., when can the team change the care-plan Kanban without escalation?). Output: a one-page decision-rights map.
-  - **Session 3 — Mastery & flow:** Slicing patient-facing work small and safely; WIP limits on the board; a kata on writing a thin, testable, *auditable* story.
-  - **Session 4 — Purpose & feedback loops:** Connect sprint output to the OKRs (readmissions, task-completion). Activity: map last sprint's increments to which OKR they moved.
+  - **Session 1 : Why agile, here:** Manifesto values mapped to CareBridge's mission (cutting avoidable readmissions). Activity: each member writes the *purpose* of their role in one patient-impact sentence.
+  - **Session 2 : Autonomy & decision rights:** Delegation poker on real decisions (e.g., when can the team change the care-plan Kanban without escalation?). Output: a one-page decision-rights map.
+  - **Session 3 : Mastery & flow:** Slicing patient-facing work small and safely; WIP limits on the board; a kata on writing a thin, testable, *auditable* story.
+  - **Session 4 : Purpose & feedback loops:** Connect sprint output to the OKRs (readmissions, task-completion). Activity: map last sprint's increments to which OKR they moved.
 - **How to execute:** Scrum Master owns scheduling inside existing sprint cadence; pre-read is one short article + the relevant CareBridge artifact; each session produces a visible artifact (decision map, sliced story, OKR linkage) so learning lands in the actual workflow.
 
 ### Servant-leadership program
 
-**"Serve the Team" — a leadership practice track for the Scrum Master, PO, and tech/clinical leads**
+**"Serve the Team" : a leadership practice track for the Scrum Master, PO, and tech/clinical leads**
 
-- **Purpose:** Help leads master servant leadership — removing impediments, facilitating collaboration, and enabling shared decision-making rather than directing.
+- **Purpose:** Help leads master servant leadership : removing impediments, facilitating collaboration, and enabling shared decision-making rather than directing.
 - **Participants:** Scrum Master (facilitator), Product Owner, lead engineers, Clinical SME, DevOps/SRE lead; sponsored by leadership.
 - **Format:** Six bi-weekly 60-minute peer-coaching circles + on-the-job practice between sessions.
 - **Core practices covered:**
@@ -70,11 +70,11 @@ Keep it concrete and immediately runnable by a Scrum Master.
 
 ### Collaboration survey
 
-**CareBridge Cross-Functional Collaboration Pulse** — run anonymously each sprint review; mix of multiple-choice (MC) and open-ended (OE). Anchored to our OKRs so results tie to outcomes, not vibes.
+**CareBridge Cross-Functional Collaboration Pulse** : run anonymously each sprint review; mix of multiple-choice (MC) and open-ended (OE). Anchored to our OKRs so results tie to outcomes, not vibes.
 
 1. **(MC)** This sprint, I had the information and access I needed from other roles to do my work well. *(Strongly disagree → Strongly agree, 1–5)*
 2. **(MC)** Clinical context (from our nurse-informaticist) reached engineering early enough to avoid rework on patient-facing stories. *(1–5)*
-3. **(MC)** Compliance/audit work (HIPAA, SOC 2) was planned and visible in the sprint rather than a surprise. *(1–5)* — *anchors OKR 3: HIPAA + SOC 2 Type II readiness.*
+3. **(MC)** Compliance/audit work (HIPAA, SOC 2) was planned and visible in the sprint rather than a surprise. *(1–5)* : *anchors OKR 3: HIPAA + SOC 2 Type II readiness.*
 4. **(MC)** I felt safe raising a defect, risk, or doubt about a patient-facing feature without fear of blame. *(1–5)*
 5. **(MC)** Decisions that the team should own were made by the team, not escalated unnecessarily. *(1–5)*
 6. **(MC)** Our increments this sprint moved at least one organizational OKR (readmissions ↓15%, ≥90% care-task completion, or compliance readiness). *(Yes / Partly / No / Unsure)*
@@ -87,9 +87,9 @@ Keep it concrete and immediately runnable by a Scrum Master.
 
 ## PM judgment applied
 
-- **Kept** the three-program structure and the intrinsic-motivation lens (autonomy/mastery/purpose) — it's the right backbone, and tying Session 4 directly to our OKRs makes the education program defensible to leadership.
+- **Kept** the three-program structure and the intrinsic-motivation lens (autonomy/mastery/purpose) : it's the right backbone, and tying Session 4 directly to our OKRs makes the education program defensible to leadership.
 - **Changed** the survey from generic "team health" to **OKR-anchored** questions: I rewrote Q3 and Q6 to explicitly test compliance visibility (OKR 3) and OKR-linked increments, because a culture survey that doesn't connect to outcomes won't survive budget scrutiny.
 - **Challenged** scope creep on the servant-leadership track: the AI proposed a multi-month curriculum; I capped it at six 60-minute circles that fit *inside* existing cadence so it doesn't compete with delivery.
-- **Verified** psychological safety shows up in *both* the program and the survey (Q4) — that's the inhibitor I most want to move, so I made sure it's measured, not just trained.
+- **Verified** psychological safety shows up in *both* the program and the survey (Q4) : that's the inhibitor I most want to move, so I made sure it's measured, not just trained.
 
-_Reusable prompt: [prompt-library](../prompts/prompt-library.md) · Source technique: AI-Powered Agile workbook §3.2._
+_Reusable prompt: [prompt-library](../prompts/prompt-library.md) · Source technique: AI-Powered Agile workbook 3.2._

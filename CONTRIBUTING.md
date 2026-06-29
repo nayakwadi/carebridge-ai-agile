@@ -40,7 +40,7 @@ npm run typecheck    # must pass before you open a PR
 
 ## Branching model
 
-We use **short-lived feature branches off `main`**. Branch, make a focused change, open a PR, merge, and delete the branch. Keep branches small and rebased on the latest `main` to avoid drift — long-running branches are discouraged.
+We use **short-lived feature branches off `main`**. Branch, make a focused change, open a PR, merge, and delete the branch. Keep branches small and rebased on the latest `main` to avoid drift : long-running branches are discouraged.
 
 Suggested naming: `feat/<short-slug>`, `fix/<short-slug>`, `docs/<short-slug>`.
 
@@ -62,23 +62,23 @@ Common types: `feat`, `fix`, `docs`, `test`, `refactor`, `chore`, `ci`.
 
 1. Branch off `main`, make your change, and ensure the relevant checks above pass.
 2. Open a PR and fill out the [PR template](.github/pull_request_template.md).
-3. Keep PRs small and single-purpose — easier to review, safer to revert.
+3. Keep PRs small and single-purpose : easier to review, safer to revert.
 4. A PR merges once it meets the Definition of Done and has a passing review.
 
 ## Definition of Done
 
 A change is **done** only when all of the following are true:
 
-- **Code** — implemented, follows existing style, and is scoped to the change.
-- **Tests** — new behavior is covered; `pytest` (backend) and `npm run typecheck` (frontend) pass.
-- **Docs** — user-facing or architectural changes are documented (e.g. under `docs/`).
-- **Audit-safe** — because CareBridge handles PHI, any change touching data access preserves the HIPAA-style audit trail (READ/WRITE logging) and introduces no new way to read PHI without a logged trail.
+- **Code** : implemented, follows existing style, and is scoped to the change.
+- **Tests** : new behavior is covered; `pytest` (backend) and `npm run typecheck` (frontend) pass.
+- **Docs** : user-facing or architectural changes are documented (e.g. under `docs/`).
+- **Audit-safe** : because CareBridge handles PHI, any change touching data access preserves the HIPAA-style audit trail (READ/WRITE logging) and introduces no new way to read PHI without a logged trail.
 
 ## Filing issues
 
 Use the templates under [`.github/ISSUE_TEMPLATE/`](.github/ISSUE_TEMPLATE):
 
-- **User stories / feature requests** — [user-story template](.github/ISSUE_TEMPLATE/user_story.md)
-- **Bugs** — [bug report template](.github/ISSUE_TEMPLATE/bug_report.md)
+- **User stories / feature requests** : [user-story template](.github/ISSUE_TEMPLATE/user_story.md)
+- **Bugs** : [bug report template](.github/ISSUE_TEMPLATE/bug_report.md)
 
 Choosing the right template keeps the backlog refinable and triage fast.

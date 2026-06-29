@@ -1,10 +1,10 @@
 # AI-Assisted Retrospectives & Lessons Learned
 
-*Course mapping — Workbook §1.4: Agile Retrospectives and Lessons Learned with AI*
+*Course mapping : Workbook 1.4: Agile Retrospectives and Lessons Learned with AI*
 
 ## Scenario
 
-After CareBridge Sprint 6 — the sprint where the HIPAA audit trail (CB-9) and the Kanban task board (CB-5) both landed — I used AI to synthesize the team's raw retro notes and reaction votes into themes, a sentiment read, and committed action items, so the 60-minute retro produced decisions instead of just a wall of sticky notes.
+After CareBridge Sprint 6 : the sprint where the HIPAA audit trail (CB-9) and the Kanban task board (CB-5) both landed : I used AI to synthesize the team's raw retro notes and reaction votes into themes, a sentiment read, and committed action items, so the 60-minute retro produced decisions instead of just a wall of sticky notes.
 
 ## AI retrospective tooling considered
 
@@ -45,16 +45,16 @@ Be specific to what the notes actually say; do not invent items that aren't supp
 
 ## AI-generated output
 
-**CareBridge — Sprint 6 Retrospective (AI-synthesized)**
+**CareBridge : Sprint 6 Retrospective (AI-synthesized)**
 
 ### What went well
-- **Compliance milestone landed.** The HIPAA audit-trail middleware (CB-9) is live and logging every READ/WRITE — the team's most-upvoted item and a direct hit on OKR-3 readiness.
+- **Compliance milestone landed.** The HIPAA audit-trail middleware (CB-9) is live and logging every READ/WRITE : the team's most-upvoted item and a direct hit on OKR-3 readiness.
 - **The board feels right to clinicians.** The Kanban task board (CB-5) demoed well; the Clinical SME's "finally looks like how we actually work" was a strong validation signal.
 - **Pairing reduced rework.** Pairing on the RBAC model cut rework cycles sharply versus Sprint 5, and cross-functional unblocking (UX ↔ Backend) was fast.
 
 ### What didn't go well
-- **Performance regression caught late.** Audit logging added latency to patient-list load and QA flagged it close to the demo — a near-miss that points to missing performance checks in the definition of done.
-- **External dependency stalled FHIR import.** Two stories (CB-15) carried over, blocked on pilot-site export credentials — an avoidable, foreseeable external dependency.
+- **Performance regression caught late.** Audit logging added latency to patient-list load and QA flagged it close to the demo : a near-miss that points to missing performance checks in the definition of done.
+- **External dependency stalled FHIR import.** Two stories (CB-15) carried over, blocked on pilot-site export credentials : an avoidable, foreseeable external dependency.
 - **Process friction.** Standups drifted long and status-report-y, and a flaky staging environment cost roughly half a day.
 
 ### Sentiment read
@@ -71,11 +71,11 @@ Be specific to what the notes actually say; do not invent items that aren't supp
 
 ## PM judgment applied
 
-- **Kept the sentiment framing, sharpened the read.** I agreed the sprint was net-positive but explicitly told the team the negatives were *process, not people* — that distinction changes how we act on them, and the AI's vote-based reasoning supported it.
+- **Kept the sentiment framing, sharpened the read.** I agreed the sprint was net-positive but explicitly told the team the negatives were *process, not people* : that distinction changes how we act on them, and the AI's vote-based reasoning supported it.
 - **Assigned single owners.** The AI's draft left action 4 shared; I kept it dual-owned (Scrum Master for standups, DevOps/SRE for staging) but made each owner's slice explicit so nothing is "everyone's job."
-- **Made action 3 a gate, not a task.** I reinforced that CB-15 stays out of the sprint until credentials land — turning a recurring carryover into a pull-condition, which matches how I re-ranked CB-15 in the prioritization artifact.
+- **Made action 3 a gate, not a task.** I reinforced that CB-15 stays out of the sprint until credentials land : turning a recurring carryover into a pull-condition, which matches how I re-ranked CB-15 in the prioritization artifact.
 - **Verified nothing was invented.** I checked every theme and action against the raw notes; the AI added no items that the team didn't actually raise, which is the bar for trusting an AI-summarized retro.
 
 ---
 
-_Reusable prompt: [prompt-library](../prompts/prompt-library.md) · Source technique: AI-Powered Agile workbook §1.4._
+_Reusable prompt: [prompt-library](../prompts/prompt-library.md) · Source technique: AI-Powered Agile workbook 1.4._

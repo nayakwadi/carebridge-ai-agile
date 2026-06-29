@@ -1,4 +1,4 @@
-# ADR 0001 — Three-tier architecture
+# ADR 0001 : Three-tier architecture
 
 ## Status
 
@@ -17,11 +17,11 @@ reviewer to reason about. The product is a fairly conventional CRUD-plus-workflo
 
 Adopt a classic **three-tier architecture** with hard boundaries:
 
-- **Presentation** — React 18 + TypeScript (Vite). Renders the dashboard, patient list, and
+- **Presentation** : React 18 + TypeScript (Vite). Renders the dashboard, patient list, and
   care-plan Kanban board. Holds no database credentials and never talks to storage directly.
-- **Application** — FastAPI REST API. Owns validation, authentication, business rules, the
+- **Application** : FastAPI REST API. Owns validation, authentication, business rules, the
   HIPAA-style audit trail, and caching. This is the only tier that touches PHI.
-- **Data** — PostgreSQL (system of record) plus Redis (ephemeral aggregate cache).
+- **Data** : PostgreSQL (system of record) plus Redis (ephemeral aggregate cache).
 
 All cross-tier traffic is explicit: the browser speaks JSON/HTTP to the API over a CORS-scoped
 origin; the API speaks SQL to Postgres and a key/value protocol to Redis.
@@ -32,7 +32,7 @@ origin; the API speaks SQL to Postgres and a key/value protocol to Redis.
 
 - A single security choke point: every PHI request crosses the API, where audit logging and auth
   are enforced uniformly. This is what makes a credible HIPAA access trail possible.
-- Each tier scales on its own curve — static/CDN frontend, stateless horizontally-scaled API,
+- Each tier scales on its own curve : static/CDN frontend, stateless horizontally-scaled API,
   vertically-scaled Postgres with read replicas.
 - Clear separation of concerns keeps changes local: UI work can't break the data model, and schema
   changes are mediated by typed schemas at the API edge.
@@ -41,7 +41,7 @@ origin; the API speaks SQL to Postgres and a key/value protocol to Redis.
 **Negative / trade-offs**
 
 - More moving parts than a monolith-with-templates: three deployable units to build, wire, and
-  operate (mitigated locally by Docker Compose — see ADR 0004).
+  operate (mitigated locally by Docker Compose : see ADR 0004).
 - Network hops between tiers add latency versus an in-process design (mitigated by caching
   aggregates and indexing hot paths).
 - Some boilerplate is duplicated across tiers (e.g. types described in both TypeScript and Pydantic).

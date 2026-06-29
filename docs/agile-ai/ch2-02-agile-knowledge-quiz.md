@@ -1,10 +1,10 @@
 # Agile Knowledge Quiz for the CareBridge Team
 
-*Course mapping — Workbook §2.2: Using AI to assess and level-set a team's Agile knowledge*
+*Course mapping : Workbook 2.2: Using AI to assess and level-set a team's Agile knowledge*
 
 ## Scenario
 
-The CareBridge delivery team is cross-functional and newly formed — some members are deep in Scrum, others (notably the Clinical SME) are new to Agile ceremonies. Before our first sprint I used AI to generate a short, fair knowledge check so I could spot gaps and tailor coaching, rather than assume everyone shares the same vocabulary.
+The CareBridge delivery team is cross-functional and newly formed : some members are deep in Scrum, others (notably the Clinical SME) are new to Agile ceremonies. Before our first sprint I used AI to generate a short, fair knowledge check so I could spot gaps and tailor coaching, rather than assume everyone shares the same vocabulary.
 
 ## The prompt I used
 
@@ -58,7 +58,7 @@ D. The Scrum Master reviews individual performance
 
 **7. The team estimates backlog items in story points. Story points primarily express:**
 A. The exact number of hours a task will take
-**B. Relative size — effort, complexity, and uncertainty combined**
+**B. Relative size : effort, complexity, and uncertainty combined**
 C. The business priority of an item
 D. The number of developers needed
 
@@ -85,8 +85,8 @@ D. To close the current sprint
 ## PM judgment applied
 
 - **Kept the two CareBridge-specific items (Q4, Q8) front and center.** AI's first pass was generic Scrum trivia; I pushed for questions tied to our audit-trail Definition of Done and a real care-transition workflow, which makes the assessment relevant and surfaces clinical-Agile gaps.
-- **Verified each "correct" answer against the Scrum Guide.** I checked the Daily Scrum, retrospective, and PO-accountability answers for accuracy rather than trusting the bolding — AI occasionally mislabels the team-accountability questions.
+- **Verified each "correct" answer against the Scrum Guide.** I checked the Daily Scrum, retrospective, and PO-accountability answers for accuracy rather than trusting the bolding : AI occasionally mislabels the team-accountability questions.
 - **Cut a duplicate question.** AI produced two near-identical WIP-limit items; I removed one and replaced it with the Backlog Refinement question (Q10) to widen coverage.
 - **Added the scoring guide as a coaching tool, not a grade.** I reframed results toward targeted coaching so the quiz builds the team up instead of ranking individuals.
 
-_Reusable prompt: [prompt-library](../prompts/prompt-library.md) · Source technique: AI-Powered Agile workbook §2.2._
+_Reusable prompt: [prompt-library](../prompts/prompt-library.md) · Source technique: AI-Powered Agile workbook 2.2._

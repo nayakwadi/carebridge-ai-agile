@@ -1,4 +1,4 @@
-# ADR 0002 — FastAPI for the application tier
+# ADR 0002 : FastAPI for the application tier
 
 ## Status
 
@@ -24,10 +24,10 @@ handles token issue/verify.
 
 **Positive**
 
-- **Auto-generated OpenAPI / Swagger** — the `/docs` UI and machine-readable contract come for
+- **Auto-generated OpenAPI / Swagger** : the `/docs` UI and machine-readable contract come for
   free, which is invaluable for frontend integration and for demonstrating the API to reviewers.
 - **Pydantic validation** rejects malformed requests at the edge and, on the way out, restricts
-  responses to declared fields — a direct PHI-minimization control rather than a convention.
+  responses to declared fields : a direct PHI-minimization control rather than a convention.
 - **Native async** gives headroom to make future external I/O non-blocking without a framework
   change.
 - **Middleware model** made the cross-cutting audit trail clean: one `BaseHTTPMiddleware` wraps
@@ -36,7 +36,7 @@ handles token issue/verify.
 
 **Negative / trade-offs**
 
-- Smaller "batteries-included" surface than Django — no built-in admin, ORM, or auth, so those are
+- Smaller "batteries-included" surface than Django : no built-in admin, ORM, or auth, so those are
   assembled from libraries (SQLAlchemy, PyJWT) and owned by us.
 - Async correctness requires discipline (avoiding blocking calls in async paths).
 - A younger ecosystem than Flask/Django means fewer long-tail third-party integrations.

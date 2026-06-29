@@ -1,6 +1,6 @@
 <!-- Note: this brief intentionally contains ambiguities for the Ch1.3 AI requirements-refinement exercise to surface. -->
 
-# CareBridge — Product Brief & Project Charter (MVP)
+# CareBridge : Product Brief & Project Charter (MVP)
 
 **Document type:** Project charter / product vision
 **Version:** 0.9 (draft for stakeholder review)
@@ -11,9 +11,9 @@
 
 ## 1. Background
 
-CareBridge Health is a mid-sized US digital-health firm that builds tooling for hospital care teams. Today, care coordination across transitions of care — hospital to home to specialist — is fragmented across phone calls, faxes, spreadsheets, and disconnected EHR modules. Tasks fall through the cracks during the highest-risk window for a patient: the first 30 days after discharge.
+CareBridge Health is a mid-sized US digital-health firm that builds tooling for hospital care teams. Today, care coordination across transitions of care : hospital to home to specialist : is fragmented across phone calls, faxes, spreadsheets, and disconnected EHR modules. Tasks fall through the cracks during the highest-risk window for a patient: the first 30 days after discharge.
 
-CareBridge is an AI-assisted patient care-coordination platform. It gives a care team a single shared view of their patients, structured care plans, and a task board that makes "who owns what, by when" unambiguous — with a full audit trail behind it. The MVP targets a HIPAA-conscious pilot with three health systems, and the company is simultaneously preparing to expand into the EU (Germany) and Canada.
+CareBridge is an AI-assisted patient care-coordination platform. It gives a care team a single shared view of their patients, structured care plans, and a task board that makes "who owns what, by when" unambiguous : with a full audit trail behind it. The MVP targets a HIPAA-conscious pilot with three health systems, and the company is simultaneously preparing to expand into the EU (Germany) and Canada.
 
 ## 2. Problem statement
 

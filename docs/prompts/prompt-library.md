@@ -6,11 +6,11 @@ A copy-paste library of every prompt used across the [AI-Powered Agile artifacts
 #ROLE  ·  #TASK  ·  #AUDIENCE  ·  #FORMAT  ·  #SUCCESS METRICS
 ```
 
-**How to use this file:** find the situation you're in, copy the fenced block, fill the `{variables}`, run it — then apply your own judgment to the draft. AI drafts; you decide and own the outcome.
+**How to use this file:** find the situation you're in, copy the fenced block, fill the `{variables}`, run it : then apply your own judgment to the draft. AI drafts; you decide and own the outcome.
 
 ---
 
-## Chapter 1 — Managing projects
+## Chapter 1 : Managing projects
 
 ### 1.1 Prioritize a product backlog
 *Use when you have a flat list of backlog items and need a defensible, outcome-driven order.*
@@ -41,7 +41,7 @@ A copy-paste library of every prompt used across the [AI-Powered Agile artifacts
            each as an INVEST-quality user story.
            Requirement(s): {paste stories/requirements}.
 #AUDIENCE  The delivery team during refinement.
-#FORMAT    Two sections — (1) bulleted gap analysis, (2) rewritten stories with
+#FORMAT    Two sections : (1) bulleted gap analysis, (2) rewritten stories with
            acceptance criteria.
 #SUCCESS METRICS  Stories the team can estimate and build without follow-up
            questions, satisfying {key constraint, e.g. audit-trail logging}.
@@ -65,7 +65,7 @@ A copy-paste library of every prompt used across the [AI-Powered Agile artifacts
 
 ---
 
-## Chapter 2 — Building the team
+## Chapter 2 : Building the team
 
 ### 2.1 Scope an Agile delivery team
 *Use before opening requisitions to pressure-test which roles you truly need.*
@@ -117,7 +117,7 @@ A copy-paste library of every prompt used across the [AI-Powered Agile artifacts
 ```
 
 ### 2.2 Build a SCRUM × SCARF matrix
-*Use to plan change adoption — mapping ceremonies to the brain's social drivers.*
+*Use to plan change adoption : mapping ceremonies to the brain's social drivers.*
 
 ```text
 #ROLE      Agile Coach fluent in the SCARF model (Status, Certainty, Autonomy,
@@ -148,7 +148,7 @@ A copy-paste library of every prompt used across the [AI-Powered Agile artifacts
 
 ---
 
-## Chapter 3 — Culture & regulation
+## Chapter 3 : Culture & regulation
 
 ### 3.1 Diagnose culture inhibitors (Agile Culture Matrix)
 *Use to surface what's blocking an Agile transformation and where each blocker sits.*

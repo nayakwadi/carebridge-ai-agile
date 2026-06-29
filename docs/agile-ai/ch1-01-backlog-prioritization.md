@@ -1,10 +1,10 @@
 # AI-Assisted Backlog Prioritization
 
-*Course mapping — Workbook §1.1: Managing Agile Projects Using AI*
+*Course mapping : Workbook 1.1: Managing Agile Projects Using AI*
 
 ## Scenario
 
-I have a 16-story CareBridge MVP backlog (`docs/product/product-backlog.md`) and two quarters to ship a pilot-ready product for three HIPAA-conscious health systems. I used AI as a scrum-master collaborator to turn the project context, OKRs, and technical dependencies into a defensible priority order — then applied PM judgment before committing.
+I have a 16-story CareBridge MVP backlog (`docs/product/product-backlog.md`) and two quarters to ship a pilot-ready product for three HIPAA-conscious health systems. I used AI as a scrum-master collaborator to turn the project context, OKRs, and technical dependencies into a defensible priority order : then applied PM judgment before committing.
 
 ## The prompt I used
 
@@ -54,7 +54,7 @@ can better inform your prioritization recommendation.
 
 ## AI-generated output
 
-**Prioritized backlog — CareBridge MVP**
+**Prioritized backlog : CareBridge MVP**
 
 | Rank | Story ID | Feature | Rationale |
 |------|----------|---------|-----------|
@@ -69,7 +69,7 @@ can better inform your prioritization recommendation.
 | 9 | CB-6 | Blocked task state + reason | Small, high-leverage: surfaces stalls during the 30-day window so coordinators intervene. |
 | 10 | CB-11 | Task-assigned notifications | Drives prompt action on new work; first half of the OKR-2 follow-through loop. |
 | 11 | CB-12 | Overdue-task notifications | Closes the follow-through loop; protects against slippage in the critical window. |
-| 12 | CB-15 | FHIR import | Needed before go-live so pilot sites don't re-key records, but gated by external export access — start discovery early, build once data is available. |
+| 12 | CB-15 | FHIR import | Needed before go-live so pilot sites don't re-key records, but gated by external export access : start discovery early, build once data is available. |
 | 13 | CB-16 | FHIR validation / de-dup | Protects chart integrity; only meaningful once import (CB-15) exists. |
 | 14 | CB-13 | Reporting / readmission dashboard | Proves OKR-1 and OKR-2, but needs task + audit data to exist first; value lands later in the pilot. |
 | 15 | CB-14 | Dashboard risk/team filters | Enhancement to CB-13; defer until the base dashboard is in use. |
@@ -90,10 +90,10 @@ can better inform your prioritization recommendation.
 ## PM judgment applied
 
 - **Kept the compliance-first spine.** The AI correctly ranked auth/RBAC/audit (CB-7/8/9) ahead of most clinical features. For a HIPAA pilot that's right, and I committed it without change.
-- **Challenged the dashboard ranking.** I pushed CB-13 down to rank 14 (the AI had floated it higher) because OKR-1 readmission data largely arrives from outside the platform and lags — so an early dashboard would have nothing real to show. I logged "OKR-1 measurement source" as an open question, exactly as the AI flagged.
-- **Verified CB-10's late rank against business risk.** I accepted ranking EU data-residency last for delivery, but I overrode the implied "do it last" by scheduling an infra spike in Sprint 2 — the hosting lead time is the actual risk, not the build effort.
+- **Challenged the dashboard ranking.** I pushed CB-13 down to rank 14 (the AI had floated it higher) because OKR-1 readmission data largely arrives from outside the platform and lags : so an early dashboard would have nothing real to show. I logged "OKR-1 measurement source" as an open question, exactly as the AI flagged.
+- **Verified CB-10's late rank against business risk.** I accepted ranking EU data-residency last for delivery, but I overrode the implied "do it last" by scheduling an infra spike in Sprint 2 : the hosting lead time is the actual risk, not the build effort.
 - **Carried the open questions into refinement.** The AI's "additional information" list became real backlog-refinement actions (per-site go-live order, capacity split, auth scope) rather than being treated as a finished answer.
 
 ---
 
-_Reusable prompt: [prompt-library](../prompts/prompt-library.md) · Source technique: AI-Powered Agile workbook §1.1._
+_Reusable prompt: [prompt-library](../prompts/prompt-library.md) · Source technique: AI-Powered Agile workbook 1.1._
