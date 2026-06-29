@@ -1,4 +1,4 @@
-# CareBridge 🏥 : AI-Powered Agile, demonstrated end-to-end
+# AI-Powered Agile Project Demo With a 3 Tier App : CareBridge 🏥
 
 [![CI](https://github.com/nayakwadi/carebridge-ai-agile/actions/workflows/ci.yml/badge.svg)](https://github.com/nayakwadi/carebridge-ai-agile/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
@@ -11,7 +11,11 @@
 
 > A working **3-tier healthcare application** *and* the complete **AI-powered Agile playbook** used to plan, staff, and govern it : built to demonstrate the skills from LinkedIn Learning's *AI-Powered Agile: Strategies for Modern Project Managers* (Chapters 1–3).
 
-Grooming a backlog used to eat my whole Friday. After this course, the technique that stuck was learning to **direct AI like a senior teammate : Act as a ROLE → Create a TASK → Show as a FORMAT** : and to keep the human judgment where it belongs. Rather than file the certificate away, I built proof: a realistic product, a real architecture, and every Agile artifact produced *with* AI and *refined by* a PM.
+<p align="center">
+  <img src="docs/assets/ai-powered-agile-infographic.png" alt="AI-Powered SDLC: how AI was used at every phase of building CareBridge" width="720">
+</p>
+
+Grooming a backlog used to take more time. After this course, the technique that stuck was learning to **direct AI like a senior teammate : Act as a ROLE → Create a TASK → Show as a FORMAT** : and to keep the human judgment where it belongs. This Project demonstrates a realistic product, a real architecture, and every Agile artifact produced *with* AI and *refined by* a PM.
 
 This repo is two things at once:
 1. **A runnable 3-tier app** : React + TypeScript ▸ FastAPI ▸ PostgreSQL/Redis, one command to start.

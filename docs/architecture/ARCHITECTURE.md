@@ -26,11 +26,11 @@ seeded. Compose defines four services: `web`, `api`, `db`, and `cache`.
 
 ```mermaid
 flowchart LR
-    subgraph Presentation["Presentation tier : :5173"]
+    subgraph Presentation["Presentation tier (:5173)"]
         B["Browser<br/>React 18 + TypeScript (Vite)"]
     end
 
-    subgraph Application["Application tier : :8000"]
+    subgraph Application["Application tier (:8000)"]
         direction TB
         MW["Audit middleware<br/>(every /api request → audit_log)"]
         JWT["JWT auth<br/>(PyJWT / OAuth2 bearer : demo stub)"]
